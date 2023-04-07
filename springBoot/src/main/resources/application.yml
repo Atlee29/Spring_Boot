@@ -1,0 +1,23 @@
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 9090
+spring:
+  application:
+    name: client2
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111
+  mvc:
+    view:
+      suffix: .jsp
+  web:
+    resources:
+      static-locations: file:/springBoot/src/main/resources/chotabheem.jpg
