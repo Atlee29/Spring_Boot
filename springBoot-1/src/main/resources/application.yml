@@ -1,0 +1,16 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  server:
+    port: 9095
+    
+spring:
+  application:
+    name: client1
+  boot:
+    admin:
+      client:
+        url : http://localhost:1111
+
